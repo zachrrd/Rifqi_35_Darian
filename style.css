@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #345934;
+    padding: 20px;
+}
+
+.fotokami {
+    display: flex;                /* Use flexbox layout */
+    flex-wrap: wrap;              /* Allows wrapping to the next line if necessary */
+    justify-content: space-around; /* Space items evenly */
+    background-color: #345934;
+    color: white;
+    padding: 15px;
+}
+
+.fotokami div {
+    text-align: center;
+    margin: 10px;                
+    flex: 1 1 200px;            
+}
+
+.gambar-kelompok img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.detail-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.detail-table {
+    display: none;               
+}

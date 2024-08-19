@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KelompokKita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="atas">
+    <header>
+        <h1><b>KELOMPOK DARIAN</b></h1>
+    </header>
+</section>
+
+<script>
+    function toggleDetails(id) {
+        var detailTable = document.getElementById(id);
+        if (detailTable.style.display === 'none' || detailTable.style.display === '') {
+            detailTable.style.display = 'table';
+        } else {
+            detailTable.style.display = 'none';
+        }
+    }
+</script>
+
+<section class="intro">
+    <p>Ini adalah kelompok DARIAN. kami terdiri dari
+    <span class="name"><b>Daniel</b></span>, 
+    <span class="name"><b>Rifqi</b></span>, dan 
+    <span class="name"><b>Ananta</b></span>. 
+    pada hari ini kami akan membuat biodata kelompok kami. <br> berikut merupakan identitas kami:</p>
+</section>
+<section class="photo">
+    <h3>FOTO KAMI</h3>
+    <div class="fotokami">
+        <div>
+            <h3>Daniel</h3>
+            <div class="gambar-kelompok">
+                <img src="danil.jpg" alt="Foto Daniel">
+            </div>
+            <button onclick="toggleDetails('detailDaniel')">About Me</button>
+            <table id="detailDaniel" class="detail-table" border="1px">
+                <tr>
+                    <td>Nama</td>
+                    <td>Daniel</td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>XIRPL2</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Tabanan</td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h3>Ananta</h3>
+            <div class="gambar-kelompok">
+                <img src="anantan.jpg" alt="Foto Ananta">
+            </div>
+            <button onclick="toggleDetails('detailAnanta')">About Me</button>
+            <table id="detailAnanta" class="detail-table" border="1px">
+                <tr>
+                    <td>Nama</td>
+                    <td>Ananta</td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>XIRPL2</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Jl. Pondok Indah 4 No 3</td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h3>Rifqi</h3>
+            <div class="gambar-kelompok">
+                <img src="ripki.jpg" alt="Foto Rifqi">
+            </div>
+            <button onclick="toggleDetails('detailRifqi')">About Me</button>
+            <table id="detailRifqi" class="detail-table" border="1px">
+                <tr>
+                    <td>Nama</td>
+                    <td>Rifqi</td>
+                </tr>
+                <tr>
+                    <td>Kelas</td>
+                    <td>XIRPL2</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Perumahan Tegal Buah</td>
+                </tr>
+                <tr>
+                    <td>Umur</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<p>Berikut merupakan link dari Sosial Media kami:</p>
+<a href="https://www.instagram.com/antds._/"> IG Ananta <br></a>
+<a href="https://www.instagram.com/made_daniel_/"> IG Daniel <br></a>
+<a href="https://www.instagram.com/zachrrd/"> IG Rifqi <br></a>
+</body>
+</html>
